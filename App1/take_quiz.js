@@ -38,16 +38,16 @@ function tabulateAnswers() {
   // Display answer corresponding to that choice
   var answerbox = document.getElementById('answer');
   if (choice1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Call of Duty";
+    answerbox.innerHTML = "You will like games such as Call of Duty: Modern Warfare";
   }
   if (choice2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Battlefield";
+    answerbox.innerHTML = "You will like games such as Super Smash Bros: Ultimate";
   }
   if (choice3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Minecraft";
+    answerbox.innerHTML = "You will like games such as Resident Evil 2";
   }
   if (choice4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Apex";
+    answerbox.innerHTML = "You will like games such as Madden 20";
   }
   // If you add more choices, you must add another response below.
 }
