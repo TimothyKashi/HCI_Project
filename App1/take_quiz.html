@@ -2,9 +2,19 @@
 <html>
   <head>
     <meta charset="UTF-8">
+
+    <!-- Navegation Bar -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="take_quiz.html">Take Quiz</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="sign_up.html">Sign up</a></li>
+    </ul>
+
     <title>Quiz</title>
     <link rel="stylesheet" href="take_quiz.css">
   </head>
+
   <body>
     <div id="wrapper">
       <h1>What kind of video games are best for you?</h1>
@@ -76,7 +86,7 @@
           Older than 27
         </label><br />
 
-        <button type="submit" id="submit" onclick="tabulateAnswers(); return false;">Submit Your Answers</button>
+        <button type="submit" id="submit" onclick="tabulateAnswers(); return false;">Submit</button>
       <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
       </form>
 
@@ -84,10 +94,7 @@
       <div id="answer">Your result will show up here!</div>
     </div>
 
-    <form action="index.html">
-      <button class="button"><span> Home </span></button>
-    </form>
-    
+
     <script src="take_quiz.js" charset="utf-8"></script>
   </body>
 </html>
