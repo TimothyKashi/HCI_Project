@@ -17,8 +17,8 @@
 
   <body>
     <div id="wrapper">
-      <h1>What kind of video games are best for you?</h1>
-      <p>Take this questionnaire to find out!</p>
+      <h1 style="text-align: center">Which video game is best for you?</h1>
+      <p style="text-align: center">Take this questionnaire to find out!</p>
 
       <form id="quiz">
         <!-- Question 1 -->
@@ -99,55 +99,114 @@
     <div class="pop_up" id="box1">
         <span class="helper"></span>
         <div>
-            <div class="popupCloseButton" onclick="close_box1()">x</div>
-            <p>You should play Call of Duty: Modern Warfare</p>
+            <div class="popupCloseButton" onclick="close_box1()">X</div>
+            <b class="pop_up_title">You should play</b> <br>
             <img src="https://media.gamestop.com/i/gamestop/10177941/Call-of-Duty-Modern-Warfare-C.O.D.E-Precision-Edition-Only-at-GameStop"
-                 alt="call of duty modern warfare"
-                 width="80" height="100">
+                 alt="smash bros"
+                 width="150" height="200"
+                 id=resevil>
+                 <br>
+            <b id="bottom_title" class="pop_up_title">Call of Duty: Modern Warfare</b> <br>
+
+                <button id="steam" onclick="gotocod()">Battle.net Link</button>
+                <button id="share" onclick="share()">Share</button> <br>
+
+           <button id="good_suggestion" onclick="sugguestion()">Good Suggestion</button>
+           <button id="bad_suggestion" onclick="sugguestion()">Bad Sugguestion</button>
         </div>
-    </div>
+      </div>
 
     <div class="pop_up" id="box2">
         <span class="helper"></span>
         <div>
-            <div class="popupCloseButton" onclick="close_box2()">x</div>
-            <p>You should play Super Smash Bros: Ultimate</p>
+            <div class="popupCloseButton" onclick="close_box2()">X</div>
+            <b class="pop_up_title">You should play</b> <br>
             <img src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/s/super-smash-bros-switch/Switch_Super_Smash_Bros_Ultimate_Box.png"
-                 alt="super smash bros"
-                 width="80" height="100">
+                 alt="smash bros"
+                 width="150" height="200"
+                 id=resevil>
+                 <br>
+            <b id="bottom_title" class="pop_up_title">Super Smash Bros: Ulitmate</b> <br>
+
+                <button id="steam" onclick="gotosmash()">Nintendo Link</button>
+                <button id="share" onclick="share()">Share</button> <br>
+
+           <button id="good_suggestion" onclick="sugguestion()">Good Suggestion</button>
+           <button id="bad_suggestion" onclick="sugguestion()">Bad Sugguestion</button>
         </div>
-    </div>
+      </div>
 
     <div class="pop_up" id="box3">
         <span class="helper"></span>
         <div>
-            <div class="popupCloseButton" onclick="close_box3()">x</div>
-            <p>You should play Red Dead Redemption</p>
-            <img src="https://media.gamestop.com/i/gamestop/10138091/Red-Dead-Redemption-2" alt="red dead redemption 2"
-                 alt="red dead redemption"
-                 width="80" height="100">
+            <div class="popupCloseButton" onclick="close_box3()">X</div>
+            <b class="pop_up_title">You should play</b> <br>
+            <img src="https://media.gamestop.com/i/gamestop/10138091/Red-Dead-Redemption-2"
+                 alt="red dead 2"
+                 width="150" height="200"
+                 id=resevil>
+                 <br>
+            <b id="bottom_title" class="pop_up_title">Red Dead Redepmtion 2</b> <br>
+
+                <button id="steam" onclick="gotoreddead()">Steam Link</button>
+                <button id="share" onclick="share()">Share</button> <br>
+
+           <button id="good_suggestion" onclick="sugguestion()">Good Suggestion</button>
+           <button id="bad_suggestion" onclick="sugguestion()">Bad Sugguestion</button>
         </div>
-    </div>
+      </div>
 
     <div class="pop_up" id="box4">
         <span class="helper"></span>
         <div>
             <div class="popupCloseButton" onclick="close_box4()">X</div>
-            <b class="title">You should play</b> <br>
+            <b class="pop_up_title">You should play</b> <br>
             <img src="https://gameoffers.co.uk/wp-content/uploads/2019/06/re2.jpg"
                  alt="resident evil 2"
-                 width="120" height="150">
+                 width="150" height="200"
+                 id=resevil>
                  <br>
-            <b class="pop_up_title">Resident Evil 2</b> <br>
+            <b id="bottom_title" class="pop_up_title">Resident Evil 2</b> <br>
 
                 <button id="steam" onclick="gotoresevil()">Steam Link</button>
-                <button id="share">Share</button> <br>
+                <button id="share" onclick="share()">Share</button> <br>
 
-           <button id="good_suggestion">Good Suggestion</button>
-           <button id="bad_suggestion">Bad Sugguestion</button>
-
+           <button id="good_suggestion" onclick="sugguestion()">Good Suggestion</button>
+           <button id="bad_suggestion" onclick="sugguestion()">Bad Sugguestion</button>
         </div>
-    </div>
+      </div>
+
+      <div class="pop_up_share" id="share_pop">
+          <span class="helper"></span>
+          <div>
+              <div class="popupCloseButton" onclick="close_share()">X</div>
+              <b class="share_title">Share with your friends!</b> <br> <br>
+              <div class="sm_logos">
+                <img src="https://image.flaticon.com/icons/png/512/23/23681.png"
+                     alt="twitter"
+                     width="100" height="100"
+                     onclick="gototwitter()">
+                <img src="https://en.facebookbrand.com/wp-content/uploads/2019/04/f_logo_RGB-Hex-Blue_512.png"
+                     alt="facebook"
+                     width="100" height="100"
+                     onclick="gotofacebook()">
+                <img src="https://www.redditinc.com/assets/images/site/reddit-logo.png"
+                     alt="reddit"
+                     width="100" height="100"
+                     onclick="gotoreddit()">
+                  <pre id="sm_names">Twitter      Facebook      Reddit</pre>
+              </div>
+          </div>
+        </div>
+
+        <div class="pop_up_share" id="sugguestion_pop">
+            <span class="helper"></span>
+            <div>
+                <div class="popupCloseButton" onclick="sugguestion_close()">X</div>
+                <b class="share_title">Thanks for the feedback!</b> <br> <br>
+                </div>
+            </div>
+
     <!-- popup -->
 
 

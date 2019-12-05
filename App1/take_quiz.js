@@ -15,7 +15,57 @@ function close_box4() {
 }
 
 function gotoresevil (){
-  window.location.href = 'https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/';
+  var win = window.open('https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2', '_blank');
+  win.focus();
+}
+
+function gotocod (){
+  var win = window.open('https://us.shop.battle.net/en-us/product/call-of-duty-modern-warfare?p=71990&utm_source=Google&utm_medium=Search&utm_content=29243361&utm_campaign=BLZ_COD_L_Modern%20Warfare%202_PC_Q4_2019_NA', '_blank');
+  win.focus();
+}
+
+function gotoreddead (){
+  var win = window.open('https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/', '_blank');
+  win.focus();
+}
+
+function gotosmash (){
+  var win = window.open('https://www.nintendo.com/games/detail/super-smash-bros-switch/', '_blank');
+  win.focus();
+}
+
+function gototwitter (){
+  // window.location.href = 'https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/';
+  var win = window.open('https://twitter.com/', '_blank');
+  win.focus();
+}
+
+function gotofacebook (){
+  // window.location.href = 'https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/';
+  var win = window.open('https://facebook.com/', '_blank');
+  win.focus();
+}
+
+function gotoreddit (){
+  // window.location.href = 'https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/';
+  var win = window.open('https://reddit.com/', '_blank');
+  win.focus();
+}
+
+function share() {
+  document.getElementById('share_pop').style.display = "block";
+}
+
+function close_share() {
+  document.getElementById('share_pop').style.display = "none";
+}
+
+function sugguestion() {
+  document.getElementById('sugguestion_pop').style.display = "block";
+}
+
+function sugguestion_close() {
+  document.getElementById('sugguestion_pop').style.display = "none";
 }
 
 function tabulateAnswers() {

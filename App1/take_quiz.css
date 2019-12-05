@@ -34,7 +34,7 @@ body {
   background: #1E628C;
 }
 h2 {
-  margin: 5px 0;
+  margin-top: 20px;
 }
 
 #wrapper {
@@ -44,6 +44,11 @@ h2 {
   padding: 10px 15px;
   border-radius: 10px;
 }
+
+#quiz {
+  margin-top: 30px;
+}
+
 input {
   margin: 5px 10px;
 }
@@ -117,10 +122,41 @@ button {
   background: #eee;
   padding: 10px;
 }
+#resevil {
+  margin: 10px 10px;
+}
 
-
-
-
+/* share pop up */
+.pop_up_share{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.pop_up_share .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.pop_up_share > div {
+    background-color: white;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+/* share pop up */
 
 /* Popup box BEGIN */
 .pop_up{
@@ -140,7 +176,7 @@ button {
     vertical-align:middle;
 }
 .pop_up > div {
-    background-color: #fff;
+    background-color: #162955;
     box-shadow: 10px 10px 60px #555;
     display: inline-block;
     height: auto;
@@ -152,6 +188,7 @@ button {
     border-radius: 8px;
     padding: 15px 5%;
 }
+
 .popupCloseButton {
     background-color: #fff;
     border: 3px solid #999;
@@ -174,6 +211,28 @@ button {
 }
 /* Popup box BEGIN */
 
+.share_title {
+  font-size: 25px;
+  color: black;
+}
+
+#bottom_title {
+  font-size: 50px;
+  color: #FEFFF8;
+}
+
 .pop_up_title {
   font-size: 20px;
+  color: #FEFFF8;
+  font-family: arial;
+}
+
+.sm_logos {
+  margin-top: 20px;
+  display: inline;
+}
+
+#sm_names {
+  font-size: 20px;
+  font-family: arial;
 }
