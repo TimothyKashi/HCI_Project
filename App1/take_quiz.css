@@ -31,7 +31,7 @@ li a:hover {
 
 body {
   font-family: sans-serif;
-  background: #4682B4;
+  background: #1E628C;
 }
 h2 {
   margin: 5px 0;
@@ -48,19 +48,69 @@ input {
   margin: 5px 10px;
 }
 button {
+  /* font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px; */
+}
+
+
+#steam {
+  background: black;
   font-size: 18px;
   padding: 10px;
-  margin: 20px 0;
+  margin: 5px 0;
   color: white;
   border: 0;
   border-radius: 10px;
-  border-bottom: 3px solid #333;
+  width: 325px;
+}
+#share {
+  background: black;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+}
+#good_suggestion {
+  background: green;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+}
+#bad_suggestion {
+  background: red;
+  font-size: 14px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
 }
 #submit {
   background: green;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
 }
 #reset {
   background: red;
+  font-size: 18px;
+  padding: 10px;
+  margin: 5px 0;
+  color: white;
+  border: 0;
+  border-radius: 10px;
 }
 #answer {
   border: 1px dashed #ccc;
@@ -68,17 +118,62 @@ button {
   padding: 10px;
 }
 
-.button {
-  border-radius: 4px;
-  background-color: black;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 16px;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-  margin-top: 50px;
+
+
+
+
+/* Popup box BEGIN */
+.pop_up{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.pop_up .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.pop_up > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+/* Popup box BEGIN */
+
+.pop_up_title {
+  font-size: 20px;
 }

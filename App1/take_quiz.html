@@ -87,12 +87,68 @@
         </label><br />
 
         <button type="submit" id="submit" onclick="tabulateAnswers(); return false;">Submit</button>
-      <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+        <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
+
       </form>
 
 
-      <div id="answer">Your result will show up here!</div>
+      <!-- <div id="answer">Your result will show up here!</div> -->
     </div>
+
+    <!-- popup -->
+    <div class="pop_up" id="box1">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton" onclick="close_box1()">x</div>
+            <p>You should play Call of Duty: Modern Warfare</p>
+            <img src="https://media.gamestop.com/i/gamestop/10177941/Call-of-Duty-Modern-Warfare-C.O.D.E-Precision-Edition-Only-at-GameStop"
+                 alt="call of duty modern warfare"
+                 width="80" height="100">
+        </div>
+    </div>
+
+    <div class="pop_up" id="box2">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton" onclick="close_box2()">x</div>
+            <p>You should play Super Smash Bros: Ultimate</p>
+            <img src="https://www.nintendo.com/content/dam/noa/en_US/games/switch/s/super-smash-bros-switch/Switch_Super_Smash_Bros_Ultimate_Box.png"
+                 alt="super smash bros"
+                 width="80" height="100">
+        </div>
+    </div>
+
+    <div class="pop_up" id="box3">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton" onclick="close_box3()">x</div>
+            <p>You should play Red Dead Redemption</p>
+            <img src="https://media.gamestop.com/i/gamestop/10138091/Red-Dead-Redemption-2" alt="red dead redemption 2"
+                 alt="red dead redemption"
+                 width="80" height="100">
+        </div>
+    </div>
+
+    <div class="pop_up" id="box4">
+        <span class="helper"></span>
+        <div>
+            <div class="popupCloseButton" onclick="close_box4()">X</div>
+            <b class="title">You should play</b> <br>
+            <img src="https://gameoffers.co.uk/wp-content/uploads/2019/06/re2.jpg"
+                 alt="resident evil 2"
+                 width="120" height="150">
+                 <br>
+            <b class="pop_up_title">Resident Evil 2</b> <br>
+
+                <button id="steam" onclick="gotoresevil()">Steam Link</button>
+                <button id="share">Share</button> <br>
+
+           <button id="good_suggestion">Good Suggestion</button>
+           <button id="bad_suggestion">Bad Sugguestion</button>
+
+        </div>
+    </div>
+    <!-- popup -->
 
 
     <script src="take_quiz.js" charset="utf-8"></script>

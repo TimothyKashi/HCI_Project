@@ -1,3 +1,23 @@
+function close_box1() {
+  document.getElementById('box1').style.display = "none";
+}
+
+function close_box2() {
+  document.getElementById('box2').style.display = "none";
+}
+
+function close_box3() {
+  document.getElementById('box3').style.display = "none";
+}
+
+function close_box4() {
+  document.getElementById('box4').style.display = "none";
+}
+
+function gotoresevil (){
+  window.location.href = 'https://store.steampowered.com/app/883710/RESIDENT_EVIL_2__BIOHAZARD_RE2/';
+}
+
 function tabulateAnswers() {
   var choice1score = 0;
   var choice2score = 0;
@@ -6,6 +26,7 @@ function tabulateAnswers() {
 
   // get a list of the radio inputs on the page
   var choices = document.getElementsByTagName('input');
+  var count = 0;
 
   for (i = 0; i < choices.length; i++)
   {
@@ -28,32 +49,37 @@ function tabulateAnswers() {
         choice4score = choice4score + 1;
         console.log("c4 score = " + choice4score);
       }
+      count++
     }
   }
+
+  // Checks if all questions are answered
+  if(count != 4)
+  {
+      alert("Please answer all questions!")
+      return false;
+  }
+
 
   // Find out which choice got the highest score.
   // If you add more choices and outcomes, you must add the variable here.
   var maxscore = Math.max(choice1score,choice2score,choice3score,choice4score);
 
   // Display answer corresponding to that choice
-  var answerbox = document.getElementById('answer');
   if (choice1score == maxscore) { // If user chooses the first choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Call of Duty: Modern Warfare";
+    document.getElementById('box1').style.display = "block";
   }
-  if (choice2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Super Smash Bros: Ultimate";
+  else if (choice2score == maxscore) { // If user chooses the second choice the most, this outcome will be displayed.
+    document.getElementById('box2').style.display = "block";
   }
-  if (choice3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Resident Evil 2";
+  else if (choice3score == maxscore) { // If user chooses the third choice the most, this outcome will be displayed.
+    document.getElementById('box3').style.display = "block";
   }
-  if (choice4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
-    answerbox.innerHTML = "You will like games such as Madden 20";
+  else if (choice4score == maxscore) { // If user chooses the fourth choice the most, this outcome will be displayed.
+    document.getElementById('box4').style.display = "block";
   }
   // If you add more choices, you must add another response below.
 }
 
 // program the reset button
-function resetAnswer() {
-  var answerbox = document.getElementById('answer');
-  answerbox.innerHTML = "Your result will show up here!";
-}
+function resetAnswer() {}
