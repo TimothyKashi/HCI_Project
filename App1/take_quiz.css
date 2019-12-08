@@ -83,7 +83,7 @@ button {
 }
 #good_suggestion {
   background: green;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
   margin: 5px 0;
   color: white;
@@ -92,7 +92,7 @@ button {
 }
 #bad_suggestion {
   background: red;
-  font-size: 14px;
+  font-size: 12px;
   padding: 10px;
   margin: 5px 0;
   color: white;
@@ -224,7 +224,7 @@ button {
 .pop_up_title {
   font-size: 20px;
   color: #FEFFF8;
-  font-family: arial;
+  font-family: impact;
 }
 
 .sm_logos {
