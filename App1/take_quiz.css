@@ -107,6 +107,8 @@ button {
   color: white;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
 }
 #reset {
   background: red;
@@ -116,7 +118,9 @@ button {
   color: white;
   border: 0;
   border-radius: 10px;
+  cursor: pointer;
 }
+
 #answer {
   border: 1px dashed #ccc;
   background: #eee;

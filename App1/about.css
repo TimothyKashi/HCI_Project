@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Arial;
 }
 
 ul {
@@ -61,6 +61,14 @@ header > h1 {
 th, td {
   padding: 10px;
   text-align: left;
+}
+
+th {
+  font-size: 18px;
+}
+
+td {
+  text-indent: 1em;
 }
 
 .button {
