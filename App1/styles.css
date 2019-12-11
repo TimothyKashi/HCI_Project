@@ -1,3 +1,6 @@
+/* css file for home page */
+
+/* style for whole page  */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,7 @@
   font-family: sans-serif;
 }
 
+/* Navigation bar */
 ul {
   list-style-type: none;
   margin: 0;
@@ -13,10 +17,12 @@ ul {
   background-color: #333;
 }
 
+/* Navigation bar */
 li {
   float: left;
 }
 
+/* Navigation bar */
 li a {
   display: block;
   color: white;
@@ -25,11 +31,12 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
+/* Change the link color to black on hover */
 li a:hover {
   background-color: #111;
 }
 
+/* Sub header */
 header > h1 {
   color: black;
   font-size: 60px;
@@ -38,6 +45,7 @@ header > h1 {
   font-family: impact;
 }
 
+/* Sub header */
 header > h2 {
   color: black;
   font-size: 25px;
@@ -51,11 +59,13 @@ body {
   background: #1E628C;
 }
 
+/* aligns video game images */
 .images {
   margin-top: 50px;
   text-align: center;
 }
 
+/* alights buttons in middle  */
 .options {
   text-align: center;
   margin-top: 50px;
