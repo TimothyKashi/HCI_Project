@@ -1,3 +1,6 @@
+/* about.css */
+
+/* styles for whole page */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +8,7 @@
   font-family: Arial;
 }
 
+/* Navigation bar  */
 ul {
   list-style-type: none;
   margin: 0;
@@ -42,6 +46,7 @@ header > h1 {
   font-size: 60px;
 }
 
+/* background for text */
 #wrapper {
   width: 700px;
   margin: auto;
@@ -53,11 +58,7 @@ header > h1 {
   color: black;
 }
 
-/* table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-} */
-
+/* table formatting  */
 th, td {
   padding: 10px;
   text-align: left;
@@ -71,6 +72,7 @@ td {
   text-indent: 1em;
 }
 
+/* button styling */
 .button {
   border-radius: 4px;
   background-color: black;

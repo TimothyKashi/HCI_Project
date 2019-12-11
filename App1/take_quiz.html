@@ -1,9 +1,11 @@
+<!-- take_quiz.html -->
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
 
-    <!-- Navegation Bar -->
+    <!-- Navigation Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="take_quiz.html">Take Quiz</a></li>
@@ -11,7 +13,9 @@
       <li><a href="sign_up.html">Sign up</a></li>
     </ul>
 
+    <!-- page title -->
     <title>Quiz</title>
+    <!-- links to take_quiz.css -->
     <link rel="stylesheet" href="take_quiz.css">
   </head>
 
@@ -21,10 +25,9 @@
       <p style="text-align: center">Take this questionnaire to find out!</p>
 
       <form id="quiz">
-        <!-- Question 1 -->
+        <!-- question 1 -->
         <h2>What genre of games do you play most?</h2>
-        <!-- Here are the choices for the first question. Each input tag must have the same name. For this question, the name is q1. -->
-        <!-- The value is which answer the choice corresponds to. -->
+        <!-- value is which answer the choice corresponds to -->
         <label><input type="radio" name="q1" value="c1">
           First Person Shooters
         </label><br />
@@ -38,9 +41,8 @@
           Sports
         </label><br />
 
-        <!-- Question 2 -->
+        <!-- question 2 -->
         <h2>How often do you play video games?</h2>
-        <!-- Here are the choices for the second question. Notice how each input tag has the same name (q2), but a different name than the previous question. -->
         <label><input type="radio" name="q2" value="c1">
           Less than 1 hour per week
         </label><br />
@@ -54,9 +56,8 @@
           More than 5 hours per week
         </label><br />
 
-        <!-- Question 3 -->
+        <!-- question 3 -->
         <h2>Which platform do you play on?</h2>
-        <!-- Choices for the third question -->
         <label><input type="radio" name="q3" value="c1">
           Xbox
         </label><br />
@@ -70,9 +71,8 @@
           Other
         </label><br />
 
-        <!-- Question 4 -->
+        <!-- question 4 -->
         <h2>What is your age?</h2>
-        <!-- Choices for the fourth question -->
         <label><input type="radio" name="q4" value="c1">
           Less than 18
         </label><br />
@@ -86,16 +86,14 @@
           Older than 27
         </label><br />
 
+        <!-- submit and reset buttons which call JavaScript functions -->
         <button type="submit" id="submit" onclick="tabulateAnswers(); return false;">Submit</button>
         <button type="reset" id="reset" onclick="resetAnswer()">Reset</button>
 
       </form>
-
-
-      <!-- <div id="answer">Your result will show up here!</div> -->
     </div>
 
-    <!-- popup -->
+    <!-- popup: Modern Warfare-->
     <div class="pop_up" id="box1">
         <span class="helper"></span>
         <div>
@@ -116,6 +114,7 @@
         </div>
       </div>
 
+    <!-- popup: Super Smash Bros-->
     <div class="pop_up" id="box2">
         <span class="helper"></span>
         <div>
@@ -136,6 +135,7 @@
         </div>
       </div>
 
+    <!-- popup: Red Dead Redemption-->
     <div class="pop_up" id="box3">
         <span class="helper"></span>
         <div>
@@ -156,6 +156,7 @@
         </div>
       </div>
 
+    <!-- popup: Resident Evil 2-->
     <div class="pop_up" id="box4">
         <span class="helper"></span>
         <div>
@@ -176,6 +177,7 @@
         </div>
       </div>
 
+      <!-- popup: Share-->
       <div class="pop_up_share" id="share_pop">
           <span class="helper"></span>
           <div>
@@ -199,6 +201,7 @@
           </div>
         </div>
 
+        <!-- popup: Feedback -->
         <div class="pop_up_share" id="sugguestion_pop">
             <span class="helper"></span>
             <div>
@@ -206,10 +209,9 @@
                 <b class="share_title">Thanks for the feedback!</b> <br> <br>
                 </div>
             </div>
+    <!-- end popups -->
 
-    <!-- popup -->
-
-
+    <!-- link to JavaScript file -->
     <script src="take_quiz.js" charset="utf-8"></script>
   </body>
 </html>
