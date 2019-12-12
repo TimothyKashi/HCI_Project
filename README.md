@@ -2,10 +2,12 @@
 
 12/11/19
 
-Team 13
-     Names: Timothy Kashi, Jake Lahr, Alexis Diaz
-     Course: CS 420 Human Computer Interaction
-     Assignment Project Part 4: Prototype Implementation
+Name: Timothy Kashi
+Course: CS 420 Human Computer Interaction, University of Nevada, Reno
+Project: Interactive computer-based application
+Description: This is a web application that will recommend a video game.
+Focus is on frontend design and user experience, so there is no impressive
+backend.
 
 
 Instructions:
