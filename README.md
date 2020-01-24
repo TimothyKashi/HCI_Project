@@ -9,6 +9,5 @@ Description: This is a web application that will recommend a video game.
 Focus is on frontend design and user experience, so there is no impressive
 backend.
 
-
-Instructions:
-  1) drag 'index.html' into browser
+Visit this website:
+https://timothykashi.github.io/HCI_Project
